@@ -19,6 +19,7 @@ This article describes the features that are up for removal or that have been re
 ## Changes in 2023 release wave 1 (version 22.0)
 
 ### Business Central Telemetry: using an instrumentation key (Removal)
+
 On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
 |Removed or Replaced? |Why?|
@@ -39,7 +40,7 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
-|Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
+|Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in the 2023 release wave 2 (version 22.0). Please use the newer .bclicense format instead. |
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
@@ -52,12 +53,12 @@ The following feature will be **Replaced** with [!INCLUDE[prod_short](../develop
 |Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
 
 ### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API
+
 The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Replaced| To help developers take advantage of all the identity features available in Azure Active Directory, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
-
 
 ### Business Central Server Administration tool (Removal)
 
@@ -68,12 +69,12 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in the 2022 release wave 2 (version 21.0). Please use the [Windows PowerShell cmdlets](/powershell/business-central/overview) that we make available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
 ### .NET add-ins not using .NET Standard (Removal)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2. |
-
 
 
 <!---
@@ -93,8 +94,9 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 The following feature will be **Removed** in a later release.
 
+|Removed or Replaced? |Why?|
+|---------|---------|
 |Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
-
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
@@ -154,7 +156,6 @@ The capability of exposing SOAP endpoints will be removed in a later release.
 |---------|---------|
 |Replaced | SOAP has been superseded by OData V4. It's recommended that integrations are migrated to OData V4 as soon as possible.|
 
-
 ### StartSession calls in upgrade/install context will fail
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
@@ -174,7 +175,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 ### Automation APIs, Beta version
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
-
 
 |Removed or Replaced?|    Why?|
 |----------------------------|------|
