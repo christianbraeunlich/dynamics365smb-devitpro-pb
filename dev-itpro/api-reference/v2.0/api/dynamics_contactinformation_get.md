@@ -48,10 +48,7 @@ If successful, this method returns a ```200 OK``` response code and a **contacts
 Here is an example of the request.
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/contactsInformation$filter=relatedId eq {customerId} and relatedType eq 'Customer'
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/contactsInformation$filter=relatedId eq {vendorId} and relatedType eq 'Vendor'
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/contactsInformation$filter=relatedId eq {bankAccountId} and relatedType eq 'Bank Account'
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/contactsInformation$filter=relatedId eq {employeeId} and relatedType eq 'Employee'
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customers({id})/contactsInformation
 ```
 
 **Response**
